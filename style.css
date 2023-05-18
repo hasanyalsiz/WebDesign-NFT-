@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navbar*/
+
+.navbar{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: radial-gradient(
+    circle at 10% 30%,
+      rgb(90, 92, 106) 8%,
+    rgb(32, 45, 58) 81.3%
+  );
+    
+    
+}
+.navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 0 20px;
+    gap:10px;
+   
+
+}
+
+.menu ul li {
+   list-style: none;
+  
+}
+.navbar .menu ul li a:hover {
+    color: #940041;
+    transition: ease 0.7s;
+  }
+.menu  ul{
+    
+    display: flex;
+
+}
+.menu  ul a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+}
+.navbar .action {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .navbar .action i {
+    color: white;
+    cursor: pointer;
+  }
+  .navbar .action button {
+    background-color: #940041;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  .navbar .action button:hover{
+    background-color: rgb(138, 4, 4);
+    transition: ease 0.7s;
+  }
+
+  /* benner */
+
+  .banner{
+    width: 100%;
+    display:flex;
+    flex-direction: row; /* YATAY */
+    padding: 100px 0px 20px 50px;
+    background-color: rgb(7, 0, 0);
+  
+    
+  }
+  .banner .card1{
+     width:100% ;
+     
+  }
+  .banner .card1 h3 {
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 26px;
+  font-weight: 400;
+ 
+  }
+  .banner .card1 h1{
+    color: white;
+    font-size: 70px;
+    margin-bottom: 15px;
+    font-weight: 800;
+  }
+  .banner .card1 p{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 20px;
+    
+  }
+
+  .banner .card2{
+    display: flex;
+    width:100%;
+    text-align: center;
+    justify-content: center;
+    
+    
+
+  }
+  .banner .card2 .şablon{
+    width:100%;
+    height: 100%;
+  }
+  .card1 button {
+    background-color: #42192b;
+    border-radius: 5px;
+    padding-left:  5px; 
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: white;
+    border: none;
+  }
+  .card1 button i {
+    background-color: #6d2243;
+    padding: 10px;
+    border-radius: 10px;
+    
+  }
+  
+ .card1 button i:hover{
+  background-color: #d6387d;
+ }
+
+ /* Card transactions */
+
+ body .card-bolum{
+  background-color: rgb(7, 0, 0);
+  padding-top: 30px;
+  padding-bottom: 80px;
+  position: relative;
+  box-sizing: border-box;
+ }
+
+ body .title h1{
+  text-align: center;
+  color: white;
+ }
+ body .title h1 span{
+  color: red;
+ }
+ 
+  
+ 
+
+ .card-bolum .cards{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+
+ }
+ 
+.cards .card .information{
+  background-color:rgb(133, 30, 30); ;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  font-weight:bold ;
+  
+  
+}
+.cards .card .information span{
+  font-weight:normal ;
+
+}
+.cards .card button{
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+  
+}
+.cards .card button span{
+  cursor: pointer;
+  color: white;
+  padding: 0 10px;
+  
+}
+.card-bolum .cards .card:hover{
+  transform: translate(
+    -13px,
+    -3px
+  );
+  transition: ease 0.7s; 
+}
+
+
+.cards .card .taste i{
+  position: relative;
+  display: flex;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+ 
+  
+ 
+  
+ 
+}
+.cards .card .taste{
+  background-color: rgb(133, 30, 30);
+  border-radius: 0 0 15px 15px;
+  
+  
+  
+}
+.cards .card .taste i{
+  cursor: pointer;
+}
+/*About NFT*/
+.hakkinda-genel{
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.8) 80%, black), url(img/back.png);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 90px 50px;
+}
+ body .hakkinda-genel .kutular{
+  
+  display: flex;
+  flex-direction: rowe;
+  width: 100%;
+  gap: 20px;
+}
+.hakkinda-genel .kutular .kutu{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hakkinda-genel .baslik{
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.hakkinda-genel .baslik span{
+  color: red;
+}
+.hakkinda-genel .kutular .kutu h3{
+  color: red;
+  text-align: center;
+  font-size: x-large;
+  margin-top: 30px;
+
+}
+.hakkinda-genel .kutular .kutu p{
+  text-align: center;
+  color: white;
+}
+
+.hakkinda-genel .kutular .kutu i{
+  font-size: 100px;
+  text-align:center;
+  cursor: pointer;
+
+}
+/*sponsorlar*/
+.sponsor .sponsor-baslik{
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 30px;
+  
+}
+.sponsor .sponsor-baslik span{
+  color: red;
+}
+.sponsor{
+  background-color: rgb(7, 0, 0) ;
+  padding-top: 50px;
+  
+}
+.sponsor .reklam{
+  width: 100%;
+  padding: 50px 50px;
+  text-align: center;
+  margin-top: 40px;
+  
+}
+.sponsor .reklam img{
+  padding: 40px;
+  
+  
+}
+.sponsor .reklam img:hover{
+transform: translateX(-3px);
+transition: 0.7s;
+}
+.sponsor img:nth-child(2n-1) {
+  background-color: #141b22;
+}
+/* FOOTER */
+footer {
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  display: flex;
+  gap: 50px;
+  color: white;
+  padding: 30px 30px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer .logo{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 0 0 10px;
+    gap:10px;
+}
+.footer .social{
+  color: black;
+  margin-left: 10px;
+  cursor: pointer;
+}
+ul{
+  list-style: none;
+  cursor: pointer;
+  
+}
+.footer ul li:nth-child(1){
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+.son p{
+  position: relative;
+  font-size: small;
+  text-align: center;
+  color: #232b33;
+  margin-top: 50px;
+}
+.social i:hover {
+  color: #790808; 
+  transition: ease 0.7s;
+  font-size: 30px;
+}
+.footer ul li:nth-child(n+2):hover{
+  color: red;
+  
+}
+
+/* Stil özellikleri, tablet boyut için geçerli */
+/* min 768px ===  max-1023px */
+@media only screen and (max-width: 767px) {
+ 
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Stil özellikleri, laptop boyut için geçerli */
+/* Stil özellikleri, laptop boyut için geçerli */
+@media only screen and (min-width: 1024px) {
+}
